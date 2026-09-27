@@ -305,3 +305,53 @@ Call / Put Pricing
                 │
                 ▼
        Final Analysis
+
+
+## 📊 Visual Results
+
+### Option Prices vs Underlying Price
+
+This analysis shows how European Call and Put option values change as the underlying asset price varies.
+
+![Option Prices vs Spot](visualization/charts/01_option_prices_vs_spot.png)
+
+### Option Prices vs Volatility
+
+Higher volatility generally increases the theoretical value of both Call and Put options.
+
+![Option Prices vs Volatility](visualization/charts/04_option_prices_vs_volatility.png)
+
+### Gamma vs Underlying Price
+
+Gamma illustrates how quickly option Delta changes with respect to the underlying asset price, with the highest sensitivity occurring around the at-the-money region.
+
+![Gamma vs Spot](visualization/charts/03_gamma_vs_spot.png)
+
+### Option Prices vs Strike Price
+
+The chart demonstrates the effect of changing the strike price while keeping other Black-Scholes inputs constant.
+
+![Option Prices vs Strike](visualization/charts/06_option_prices_vs_strike.png)
+
+### Historical Reliance Price
+
+Historical Reliance Industries price data was used to estimate annualized historical volatility and connect the theoretical model with real-world market data.
+
+![Reliance Historical Price](visualization/charts/08_reliance_historical_price.png)
+
+## 🔍 Key Findings
+
+The analysis demonstrates several important relationships within the Black-Scholes framework:
+
+- **Underlying Price:** Call option value generally increases as the underlying asset price increases, while Put option value generally decreases.
+- **Volatility:** Higher volatility increases the theoretical value of both Call and Put options.
+- **Strike Price:** Increasing the strike price generally reduces Call value and increases Put value.
+- **Time to Maturity:** Longer maturities generally increase the theoretical value of European options under the model assumptions.
+- **Delta:** Call Delta increases with the underlying asset price, while Put Delta remains negative.
+- **Gamma:** Gamma is concentrated around the at-the-money region, indicating greater Delta sensitivity near the strike price.
+- **Vega:** Vega measures the sensitivity of option value to changes in volatility.
+- **Theta:** Theta captures the effect of the passage of time on option value.
+- **Rho:** Rho measures sensitivity to changes in the risk-free interest rate.
+- **Market Data:** Historical Reliance Industries data was used to estimate annualized historical volatility and demonstrate market-based Black-Scholes inputs.
+
+> **Note:** The market-data analysis produces a theoretical Black-Scholes valuation using historical volatility. It should not be interpreted as the observed market price of an option.
